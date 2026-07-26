@@ -318,7 +318,7 @@
             <div class="text-center mb-12">
                 <span class="font-garamond text-sm tracking-[0.25em] text-[#d4a373] uppercase block mb-1">R.S.V.P</span>
                 <h2 class="text-2xl sm:text-3xl font-bold text-[#2c3531] tracking-widest">出席回函 ‧ 誠摯邀請</h2>
-                <p class="text-xs sm:text-sm text-slate-500 mt-2">請於 2026 年 10 月 10 日前填寫回覆，方便我們精心準備您的席位</p>
+                <p class="text-xs sm:text-sm text-slate-500 mt-2">請於 2026 年 9 月 30 日前填寫回覆，方便我們精心準備您的席位</p>
                 <div class="w-12 h-[2px] bg-[#d4a373] mx-auto mt-4"></div>
             </div>
 
@@ -335,15 +335,15 @@
                         <label class="block text-xs font-semibold text-[#2c3531] tracking-wider mb-2">
                             姓名 <span class="font-garamond text-slate-400 text-sm">NAME</span> <span class="text-red-400">*</span>
                         </label>
-                        <input type="text" name="entry.1330027034" id="entry_name" required placeholder="請輸入您的姓名" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm transition">
+                        <input type="text" name="entry.1877309805" id="entry_name" required placeholder="請輸入您的姓名" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm transition">
                     </div>
 
                     <!-- Field 2: Email (Bilingual Label) -->
                     <div>
                         <label class="block text-xs font-semibold text-[#2c3531] tracking-wider mb-2">
-                            電子信箱 <span class="font-garamond text-slate-400 text-sm">EMAIL</span> <span class="text-red-400">*</span>
+                            LINE ID <span class="font-garamond text-slate-400 text-sm">LINE ID</span> <span class="text-red-400">*</span>
                         </label>
-                        <input type="email" name="entry.1014833625" id="entry_email" required placeholder="example@mail.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm transition">
+                        <input type="text" name="entry.331963225" id="entry_line_id" required placeholder="請輸入您的 LINE ID" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm transition">
                     </div>
 
                     <!-- Field 3: Relationship (Bilingual Label, Pure Chinese Options) -->
@@ -351,29 +351,30 @@
                         <label class="block text-xs font-semibold text-[#2c3531] tracking-wider mb-2">
                             與新人關係 <span class="font-garamond text-slate-400 text-sm">RELATIONSHIP</span> <span class="text-red-400">*</span>
                         </label>
-                        <select name="entry.775784136" id="entry_relationship" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm bg-white transition">
+                        <select name="entry.1494727349" id="entry_relationship" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm bg-white transition">
                             <option value="" disabled selected>請選擇您的關係</option>
+                            <option value="男方家人親戚">男方家人親戚</option>
+                            <option value="男方長官、同事">男方長官、同事</option>
                             <option value="男方同學、好友">男方同學、好友</option>
+                            <option value="女方家人親戚">女方家人親戚</option>
+                            <option value="女方長官、同事">女方長官、同事</option>
                             <option value="女方同學、好友">女方同學、好友</option>
-                            <option value="男方親戚">男方親戚</option>
-                            <option value="女方親戚">女方親戚</option>
-                            <option value="男方長輩、同事">男方長輩、同事</option>
-                            <option value="女方長輩、同事">女方長輩、同事</option>
                         </select>
                     </div>
 
                     <!-- Field 4: Attendance Count (Bilingual Label, Pure Chinese Options) -->
                     <div>
                         <label class="block text-xs font-semibold text-[#2c3531] tracking-wider mb-2">
-                            參加午宴人數 <span class="font-garamond text-slate-400 text-sm">ATTENDANCE</span> <span class="text-red-400">*</span>
+                            參加晚宴人數 <span class="font-garamond text-slate-400 text-sm">ATTENDANCE</span> <span class="text-red-400">*</span>
                         </label>
-                        <select name="entry.160667701" id="entry_attendance" required onchange="handleAttendanceChange(this.value)" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm bg-white transition">
+                        <select name="entry.1395297495" id="entry_attendance" required onchange="handleAttendanceChange(this.value)" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm bg-white transition">
                             <option value="" disabled selected>請選擇參加人數</option>
-                            <option value="0">0 (無法出席，寄送祝福)</option>
+                            <option value="0">0 (不克參加但紅包會到)</option>
                             <option value="1">1 人出席</option>
                             <option value="2">2 人出席</option>
                             <option value="3">3 人出席</option>
-                            <option value="4">4 人以上</option>
+                            <option value="4">4 人出席</option>
+                            <option value="5">5 人(含)以上</option>
                         </select>
                     </div>
 
@@ -384,7 +385,7 @@
                             <label class="block text-xs font-semibold text-[#2c3531] tracking-wider mb-2">
                                 小孩人數 <span class="font-garamond text-slate-400 text-sm">CHILDREN COUNT</span>
                             </label>
-                            <input type="number" name="entry.1871316369" id="entry_children" min="0" max="10" placeholder="若無請填 0" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm transition">
+                            <input type="number" name="entry.520493479" id="entry_children" min="0" max="10" placeholder="若無請填 0" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm transition">
                         </div>
 
                         <!-- Field 6: Dietary Requirement -->
@@ -392,10 +393,9 @@
                             <label class="block text-xs font-semibold text-[#2c3531] tracking-wider mb-2">
                                 飲食需求 <span class="font-garamond text-slate-400 text-sm">DIETARY REQUIREMENT</span>
                             </label>
-                            <select name="entry.640545966" id="entry_dietary" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm bg-white transition">
+                            <select name="entry.566214999" id="entry_dietary" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm bg-white transition">
                                 <option value="葷食" selected>葷食</option>
                                 <option value="素食">素食</option>
-                                <option value="有葷有素">有葷有素</option>
                             </select>
                         </div>
 
@@ -404,7 +404,7 @@
                             <label class="block text-xs font-semibold text-[#2c3531] tracking-wider mb-2">
                                 是否需要兒童座椅 <span class="font-garamond text-slate-400 text-sm">CHILD SEAT</span>
                             </label>
-                            <select name="entry.317502969" id="entry_child_seat" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm bg-white transition">
+                            <select name="entry.445328506" id="entry_child_seat" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm bg-white transition">
                                 <option value="不需要" selected>不需要</option>
                                 <option value="需要">需要</option>
                             </select>
@@ -415,21 +415,12 @@
                             <label class="block text-xs font-semibold text-[#2c3531] tracking-wider mb-2">
                                 是否需要喜帖 <span class="font-garamond text-slate-400 text-sm">INVITATION CARD</span>
                             </label>
-                            <select name="entry.1458176781" id="entry_invitation" onchange="handleInvitationChange(this.value)" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm bg-white transition">
+                            <select name="entry.595278252" id="entry_invitation" onchange="handleInvitationChange(this.value)" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm bg-white transition">
                                 <option value="不需要">不需要</option>
                                 <option value="需要，請寄電子喜帖給我">需要，請寄電子喜帖給我</option>
                                 <option value="需要，請寄紙本喜帖給我">需要，請寄紙本喜帖給我</option>
                             </select>
                         </div>
-
-                        <!-- Field 9: Address or Note -->
-                        <div id="addressFieldGroup">
-                            <label class="block text-xs font-semibold text-[#2c3531] tracking-wider mb-2">
-                                紙本喜帖地址&amp;電子喜帖信箱 <span class="font-garamond text-slate-400 text-sm">MAILING ADDRESS / EMAIL NOTE</span>
-                            </label>
-                            <input type="text" name="entry.1973693199" id="entry_address" placeholder="若需要紙本喜帖請填寫郵寄地址與郵遞區號" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm transition">
-                        </div>
-
                     </div>
 
                     <!-- Field 10: Message / Blessing -->
@@ -437,7 +428,7 @@
                         <label class="block text-xs font-semibold text-[#2c3531] tracking-wider mb-2">
                             給新人的祝福 <span class="font-garamond text-slate-400 text-sm">MESSAGE FOR BRIDE &amp; GROOM</span>
                         </label>
-                        <textarea name="entry.1252626969" id="entry_message" rows="3" placeholder="請寫下您對新人的祝福..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm transition"></textarea>
+                        <textarea name="entry.1832065983" id="entry_message" rows="3" placeholder="請寫下您對新人的祝福..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-[#d4a373] focus:ring-1 focus:ring-[#d4a373] text-sm transition"></textarea>
                     </div>
 
                     <!-- Submit Button -->
